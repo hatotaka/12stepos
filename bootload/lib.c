@@ -4,7 +4,7 @@
 
 int putc(unsigned char c){
 	if (c == '\n'){
-		return serial_send_byte(SERIAL_DEFAULT_DEVICE, '\r');
+		serial_send_byte(SERIAL_DEFAULT_DEVICE, '\r');
 	}
 
 	return serial_send_byte(SERIAL_DEFAULT_DEVICE, c);

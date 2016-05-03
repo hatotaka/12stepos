@@ -14,7 +14,7 @@ RANLIB  = $(BINDIR)/$(ADDNAME)ranlib
 STRIP   = $(BINDIR)/$(ADDNAME)strip
 
 H8WRITE = kz_h8write
-H8WRITE_SERDEV = /dev/hogehoge
+H8WRITE_SERDEV = /dev/cu.usbserial
 
 OBJS = vector.o startup.o main.o
 OBJS += lib.o serial.o
@@ -52,3 +52,4 @@ image: $(TARGET).mot
 
 write: $(TARGET).mot
 	$(H8WRITE) -3069 -f20 $(TARGET).mot $(H8WRITE_SERDEV)
+
