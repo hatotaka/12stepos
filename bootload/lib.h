@@ -10,7 +10,7 @@ int memcmp(const void *b1, const void *b2, long len);
 int strlen(const char *s);
 char *strcpy(char *dst, const char *src);
 int strcmp(const char *s1, const char *s2);
-int  strncmp(const char *s1, const char *s2, int len);
+int strncmp(const char *s1, const char *s2, int len);
 
 int putxval(unsigned long value, int column);
 
